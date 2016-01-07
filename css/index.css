@@ -4,6 +4,6 @@ body {
   font-family: "Menlo Regular"
 }
 
-#menu_bar {
+.menu_bar {
   text-align: center;
 }
