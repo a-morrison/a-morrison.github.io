@@ -13,6 +13,17 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #4E3C3E;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #F48B95;
+}
+
 .wrapper {
   min-height: 100%;
   height: auto !important;
