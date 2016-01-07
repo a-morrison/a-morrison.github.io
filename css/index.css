@@ -24,6 +24,10 @@ body {
   height: 4em;
 }
 
+#header {
+  height: 4em;
+}
+
 .menu_bar {
   text-align: center;
 }
