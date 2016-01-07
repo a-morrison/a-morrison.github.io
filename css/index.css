@@ -28,6 +28,7 @@ body {
   display: inline;
   list-style-type: none;
   padding-right: 2em;
+  float: right;
   height: 4em;
 }
 
