@@ -1,7 +1,27 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   background-color: #282C33;
   color: #AAB1BE;
-  font-family: "Menlo Regular"
+  font-family: "Menlo Regular";
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+.footer, .push {
+  height: 4em;
 }
 
 .menu_bar {
