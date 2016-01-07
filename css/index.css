@@ -25,6 +25,9 @@ body {
 }
 
 #main_nav {
+  display: inline;
+  list-style-type: none;
+  padding-right: 2em;
   height: 4em;
 }
 
