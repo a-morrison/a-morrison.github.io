@@ -29,6 +29,98 @@ body {
   height: 2em;
 }
 
+#main_nav .nav_item {
+  position: relative;
+  margin: 0 1em;
+}
+
+#main_nav .nav_link {
+  position: relative;
+  min-width: 105px;
+  text-align: center;
+  color: #B5B5B5;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#main_nav .nav_link:hover,
+#main_nav .nav_link:focus {
+  color: #929292;
+}
+
+#main_nav .nav_item-current .nav_link {
+  color: #D94F5C;
+}
+
+#main_nav .nav_item::before,
+#main_nav .nav_link::before,
+#main_nav .nav_link::after {
+  content: '';
+  position: absolute;
+  bottom 0;
+  width: 10px;
+  height: 2px;
+  opacity: 0;
+  background: #D94F5C;
+}
+
+/* flipped sides */
+#main_nav .nav_link::before,
+#main_nav .nav_link::after {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#main_nav .nav_item-current .nav_link::before,
+#main_nav .nav_item-current .nav_link::after {
+  opacity: 1;
+}
+
+/* left flip */
+#main_nav .nav_link::before {
+  left: 0;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+#main_nav .nav_item-current .nav_link::before {
+  -webkit-transform: rotate3d(0, 0, 1, -90deg);
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+
+/* right flip */
+#main_nav .nav_link::after {
+  right: 0;
+  -webkit-ransform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+#main_nav .nav_item-current .nav_link::after {
+  -webkit-transform: rotate3d(0, 0, 1, 90deg);
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+
+/* bottom line */
+#main_nav .nav_item::before {
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#main_nav .nav_item-current::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.1s;
+  transition: transform 0.3s, opacity 0.1s;
+
+}
+
 #main_nav a {
   user-select: none;
   font-size: 1.05em;
