@@ -24,7 +24,7 @@ body {
   height: 4em;
 }
 
-#main_nav {
+#main_nav li{
   display: inline;
   list-style-type: none;
   padding-right: 2em;
