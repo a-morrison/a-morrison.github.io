@@ -13,13 +13,6 @@ body {
   height: 100%;
 }
 
-a {
-  user-select: none;
-  font-size: 1.05em;
-  text-decoration: none;
-  outline: none;
-}
-
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -34,6 +27,17 @@ a {
 #main_nav {
   padding-top: 2em;
   height: 2em;
+}
+
+#main_nav a {
+  user-select: none;
+  font-size: 1.05em;
+  text-decoration: none;
+  outline: none;
+}
+
+#main_nav a:visited {
+  color: #AAB1BE;
 }
 
 #nav_list li{
