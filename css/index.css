@@ -24,12 +24,15 @@ body {
   height: 4em;
 }
 
-#main_nav li{
+#main_nav {
+  height: 2em;
+}
+
+#nav_list li{
   display: inline;
   list-style-type: none;
   padding-right: 2em;
   float: right;
-  height: 4em;
 }
 
 .menu_bar {
