@@ -1,0 +1,58 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  font-family: Dense, sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+.header {
+  text-align: center;
+}
+
+.section-middle {
+  margin-top: 7%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#about {
+  font-size: 1em;
+}
+
+#logo {
+  vertical-align: middle;
+}
+
+#navLeft {
+  margin-right: 5px;
+}
+
+#navRight {
+  margin-left: 5px;
+}
+
+#coverPhoto {
+  float: left;
+  margin: 25px 15px 0 0;
+}
+
+#contact-subject {
+  float: left;
+}
+
+#contact-actual {
+  float: right;
+}
